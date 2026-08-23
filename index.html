@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taiwo Odeyemi | Software Engineer</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    .contact-info a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin: 2.5rem 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.2rem;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-card {
+      background: var(--card-bg);
+      padding: 1.2rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .skill-card h3 {
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-item {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      margin-bottom: 1.2rem;
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .timeline-date {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .timeline-company {
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.8rem;
+    }
+
+    ul {
+      list-style-position: inside;
+      color: var(--text-muted);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .repo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .repo-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 1.2rem;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .repo-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .repo-card p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .repo-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+
+    .repo-card a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .repo-card a:hover {
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Taiwo Odeyemi</h1>
+      <div class="subtitle">Software Engineer | Full-Stack & Analytics</div>
+      <div class="contact-info">
+        <span>📍 Lagos, Nigeria</span>
+        <span>✉️ <a href="mailto:t6_odeyemi@yahoo.com">t6_odeyemi@yahoo.com</a></span>
+        <span>🔗 <a href="https://github.com/Todyents" target="_blank">github.com/Todyents</a></span>
+        <span>🔗 <a href="https://github.com/deytaiwo2" target="_blank">github.com/deytaiwo2</a></span>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>Professional Summary</h2>
+      <p style="color: var(--text-muted);">
+        Software Engineer with hands-on experience designing, developing, and deploying full-stack web applications and scalable data pipelines[cite: 1]. Proficient in JavaScript (React, Node.js), Python, SQL, and RESTful API integrations[cite: 1]. Adept at managing web applications, optimizing backend database queries, maintaining CI/CD workflows on GitHub, and securing system infrastructure[cite: 1].
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend & Web</h3>
+          <p>JavaScript (ES6+), React.js, HTML5, CSS3, WordPress, Shopify</p>
+        </div>
+        <div class="skill-card">
+          <h3>Backend & Databases</h3>
+          <p>Node.js, Express, Python, SQL, MySQL, REST API Integration</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools & DevOps</h3>
+          <p>Git, GitHub Codespaces, GitHub Pages, npm, Data Analysis (pandas), Security Compliance</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <span class="timeline-title">Software Developer</span>
+          <span class="timeline-date">2024 – Present</span>
+        </div>
+        <div class="timeline-company">Todysec Services</div>
+        <ul>
+          <li>Designed and implemented responsive web application components using React and Node.js.</li>
+          <li>Integrated third-party RESTful APIs to automate real-time data retrieval and processing for e-commerce systems.</li>
+          <li>Configured and managed repository deployment workflows, version control, and environments via GitHub Codespaces.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-header">
+          <span class="timeline-title">Full-Stack & Analytics Developer</span>
+          <span class="timeline-date">2021 – 2024</span>
+        </div>
+        <div class="timeline-company">Volubiks Integrated Services</div>
+        <ul>
+          <li>Built and customized dynamic e-commerce platforms using PHP, WordPress, and database connections.</li>
+          <li>Developed Python data manipulation scripts using pandas for cleaning datasets and evaluating data analytics pipelines.</li>
+          <li>Maintained database integrity, executed SQL queries, and ensured continuous compliance with web security standards.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Live Projects & Repositories</h2>
+      <div class="repo-grid" id="repo-container">
+        <p style="color: var(--text-muted);">Fetching repositories from GitHub...</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education & Certifications</h2>
+      <div class="skill-card" style="margin-bottom: 0.8rem;">
+        <h3>Postgraduate Diploma (PGD), Computer and Information Science</h3>
+        <p style="color: var(--text-muted);">Lead City University | 2023</p>
+      </div>
+      <div class="skill-card" style="margin-bottom: 0.8rem;">
+        <h3>National Diploma (ND), Networks and Systems Security</h3>
+        <p style="color: var(--text-muted);">HCT Ibadan | 2022</p>
+      </div>
+      <div class="skill-card">
+        <h3>CompTIA Security+ Certified</h3>
+        <p style="color: var(--text-muted);">2023</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Taiwo Odeyemi. Built for Cloudflare Pages.</p>
+    </footer>
+  </div>
+
+  <script>
+    const githubUsernames = ['Todyents', 'deytaiwo2'];
+
+    async function fetchGitHubRepos() {
+      const repoContainer = document.getElementById('repo-container');
+      repoContainer.innerHTML = ''; 
+
+      try {
+        const fetchPromises = githubUsernames.map(username =>
+          fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=4`)
+            .then(res => res.ok ? res.json() : [])
+        );
+
+        const results = await Promise.all(fetchPromises);
+        const allRepos = results.flat();
+
+        if (allRepos.length === 0) {
+          repoContainer.innerHTML = '<p style="color: var(--text-muted);">No public repositories found.</p>';
+          return;
+        }
+
+        allRepos.slice(0, 6).forEach(repo => {
+          const card = document.createElement('div');
+          card.className = 'repo-card';
+          card.innerHTML = `
+            <div>
+              <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+              <p>${repo.description || 'No description provided.'}</p>
+            </div>
+            <div class="repo-meta">
+              <span>⚡ ${repo.language || 'Code'}</span>
+              <span>⭐ ${repo.stargazers_count}</span>
+            </div>
+          `;
+          repoContainer.appendChild(card);
+        });
+      } catch (err) {
+        repoContainer.innerHTML = '<p style="color: var(--text-muted);">Unable to load repositories right now.</p>';
+      }
+    }
+
+    fetchGitHubRepos();
+  </script>
+</body>
+</html>
