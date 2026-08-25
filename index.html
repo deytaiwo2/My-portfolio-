@@ -3,334 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Taiwo Odeyemi | Software Engineer</title>
+  <meta name="description" content="Taiwo Odeyemi is a software engineer building useful products, resilient systems, and clear data experiences." />
+  <title>Taiwo Odeyemi - Software Engineer</title>
   <style>
-    :root {
-      --bg: #0f172a;
-      --card-bg: #1e293b;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
-      --accent: #38bdf8;
-      --accent-hover: #0284c7;
-      --border: #334155;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    }
-
-    body {
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding: 2rem 1rem;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    header {
-      text-align: center;
-      padding: 2rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-    }
-
-    .subtitle {
-      font-size: 1.2rem;
-      color: var(--text-muted);
-      margin-bottom: 1rem;
-    }
-
-    .contact-info {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      font-size: 0.95rem;
-    }
-
-    .contact-info a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      margin: 2.5rem 0;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      border-bottom: 2px solid var(--accent);
-      display: inline-block;
-      margin-bottom: 1.5rem;
-      padding-bottom: 0.2rem;
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-
-    .skill-card {
-      background: var(--card-bg);
-      padding: 1.2rem;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-    }
-
-    .skill-card h3 {
-      font-size: 1.1rem;
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-    }
-
-    .timeline-item {
-      background: var(--card-bg);
-      padding: 1.5rem;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      margin-bottom: 1.2rem;
-    }
-
-    .timeline-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      margin-bottom: 0.5rem;
-    }
-
-    .timeline-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-
-    .timeline-date {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-
-    .timeline-company {
-      color: var(--accent);
-      font-weight: 500;
-      margin-bottom: 0.8rem;
-    }
-
-    ul {
-      list-style-position: inside;
-      color: var(--text-muted);
-    }
-
-    li {
-      margin-bottom: 0.4rem;
-    }
-
-    .repo-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
-    }
-
-    .repo-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      padding: 1.2rem;
-      border-radius: 8px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .repo-card h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .repo-card p {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-      flex-grow: 1;
-    }
-
-    .repo-meta {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      color: var(--accent);
-    }
-
-    .repo-card a {
-      color: var(--text);
-      text-decoration: none;
-    }
-
-    .repo-card a:hover {
-      color: var(--accent);
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 0;
-      border-top: 1px solid var(--border);
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+    :root { --ink:#171717; --paper:#f4f0e8; --lime:#d7f36b; --orange:#ff6b3d; --muted:#77746d; --line:rgba(23,23,23,.18); --display:'Space Grotesk',sans-serif; --mono:'DM Mono',monospace; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--display); } a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1160px,calc(100% - 48px)); margin:auto; } .mono { font:500 11px var(--mono); letter-spacing:.08em; text-transform:uppercase; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:27px 0; border-bottom:1px solid var(--line); } .mark { display:flex; align-items:center; gap:10px; font-weight:700; } .mark-dot { width:13px; height:13px; background:var(--orange); border-radius:50%; } .nav-links { display:flex; gap:30px; align-items:center; font-size:14px; } .nav-links a { opacity:.68; transition:opacity .2s; } .nav-links a:hover { opacity:1; } .theme-toggle { border:1px solid var(--ink); border-radius:50%; background:transparent; width:34px; height:34px; cursor:pointer; font-size:15px; }
+    .hero { min-height:660px; display:grid; grid-template-columns:1.25fr .75fr; align-items:center; gap:40px; padding:75px 0 92px; } .kicker { display:flex; align-items:center; gap:10px; color:var(--orange); margin-bottom:27px; } .kicker::before { content:''; width:34px; height:2px; background:var(--orange); } h1 { font-size:clamp(62px,10vw,132px); line-height:.87; letter-spacing:-.09em; margin:0 0 36px; max-width:750px; } h1 span { color:var(--orange); } .hero-copy { display:flex; justify-content:space-between; align-items:end; gap:30px; max-width:760px; } .hero-copy p { max-width:410px; font-size:18px; line-height:1.4; margin:0; } .hero-cta { flex:0 0 auto; background:var(--ink); color:var(--paper); padding:16px 20px; font-weight:600; font-size:14px; transition:transform .2s,background .2s; } .hero-cta:hover { background:var(--orange); transform:translateY(-3px); } .hero-art { position:relative; width:min(100%,310px); aspect-ratio:1; margin-left:auto; border:1px solid var(--ink); background:var(--lime); transform:rotate(4deg); display:grid; place-items:center; } .hero-art::before { content:''; position:absolute; inset:18px; border:1px solid var(--ink); } .hero-art strong { position:relative; font-size:72px; letter-spacing:-.12em; transform:rotate(-4deg); } .hero-art small { position:absolute; bottom:30px; left:32px; transform:rotate(-4deg); }
+    .ticker { overflow:hidden; background:var(--ink); color:var(--lime); margin-bottom:110px; } .ticker-track { display:flex; width:max-content; animation:scroll 22s linear infinite; } .ticker span { padding:17px 24px; white-space:nowrap; } .ticker b { color:var(--orange); font-size:18px; } @keyframes scroll { to { transform:translateX(-30%); } }
+    section { padding:0 0 120px; } .section-head { display:flex; justify-content:space-between; align-items:baseline; border-top:1px solid var(--ink); padding-top:16px; margin-bottom:45px; } .section-head h2 { font-size:clamp(38px,6vw,72px); letter-spacing:-.07em; line-height:.9; margin:0; } .section-head p { color:var(--muted); max-width:260px; margin:0; line-height:1.4; } .intro-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; } .intro-grid > p { font-size:clamp(24px,3vw,38px); letter-spacing:-.04em; line-height:1.08; margin:0; } .facts { display:grid; grid-template-columns:1fr 1fr; gap:28px 20px; align-content:start; } .fact { border-top:1px solid var(--line); padding-top:11px; } .fact strong { display:block; font-size:34px; letter-spacing:-.06em; margin-bottom:5px; } .fact span { color:var(--muted); font-size:13px; }
+    .filter-row { display:flex; gap:8px; margin-bottom:26px; } .filter { border:1px solid var(--line); color:var(--ink); background:transparent; padding:9px 13px; cursor:pointer; font:500 11px var(--mono); text-transform:uppercase; } .filter.active,.filter:hover { background:var(--ink); color:var(--paper); } .repo-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; } .repo-card { min-height:260px; padding:22px; border:1px solid var(--ink); display:flex; flex-direction:column; justify-content:space-between; background:#ebe6dc; transition:transform .25s,background .25s; } .repo-card:nth-child(3n+2) { background:var(--lime); } .repo-card:nth-child(3n) { background:var(--orange); } .repo-card:hover { transform:translateY(-7px) rotate(-1deg); } .repo-number { color:var(--muted); } .repo-card h3 { font-size:25px; letter-spacing:-.06em; margin:28px 0 10px; word-break:break-word; } .repo-card p { font-size:14px; line-height:1.45; max-width:290px; margin:0; } .repo-meta { display:flex; justify-content:space-between; border-top:1px solid var(--line); padding-top:12px; margin-top:24px; font-size:12px; } .repo-meta a { text-decoration:underline; } .loading { grid-column:1/-1; padding:35px 0; color:var(--muted); }
+    .experience-grid { display:grid; grid-template-columns:1fr 2fr; gap:50px; } .experience-grid h3 { font-size:25px; margin:0 0 7px; letter-spacing:-.05em; } .experience-grid .date { color:var(--orange); margin-bottom:26px; } .experience-grid ul { margin:0; padding:0; list-style:none; } .experience-grid li { border-top:1px solid var(--line); padding:15px 0 15px 25px; position:relative; line-height:1.45; color:#4e4b46; } .experience-grid li::before { content:'+'; position:absolute; left:0; color:var(--orange); font:18px var(--mono); }
+    footer { border-top:1px solid var(--ink); padding:28px 0 55px; display:flex; justify-content:space-between; align-items:center; } footer a { text-decoration:underline; text-underline-offset:4px; } .reveal { opacity:0; transform:translateY(20px); animation:reveal .7s ease forwards; } @keyframes reveal { to { opacity:1; transform:translateY(0); } } body.night { --paper:#20231f; --ink:#f4f0e8; --muted:#aaa99e; --line:rgba(244,240,232,.25); } body.night .repo-card { background:#30342e; } body.night .repo-card:nth-child(3n+2) { background:#5b6b2d; } body.night .repo-card:nth-child(3n) { background:#9b432a; } body.night .experience-grid li { color:#d0cec4; }
+    @media (max-width:720px) { .wrap { width:min(100% - 32px,1160px); } nav { padding:19px 0; } .nav-links { gap:14px; } .nav-links a { display:none; } .hero { display:block; min-height:auto; padding:70px 0 75px; } h1 { font-size:clamp(64px,21vw,110px); margin-bottom:30px; } .hero-copy { display:block; } .hero-copy p { font-size:17px; margin-bottom:24px; } .hero-art { width:210px; margin:65px auto 20px; } .hero-art strong { font-size:52px; } .ticker { margin-bottom:75px; } section { padding-bottom:80px; } .section-head { display:block; margin-bottom:30px; } .section-head p { margin-top:18px; } .intro-grid,.experience-grid { grid-template-columns:1fr; gap:42px; } .repo-grid { grid-template-columns:1fr; } .repo-card { min-height:220px; } footer { display:block; line-height:2; } footer .mono { display:block; } }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Taiwo Odeyemi</h1>
-      <div class="subtitle">Software Engineer | Full-Stack & Analytics</div>
-      <div class="contact-info">
-        <span>📍 Lagos, Nigeria</span>
-        <span>✉️ <a href="mailto:t6_odeyemi@yahoo.com">t6_odeyemi@yahoo.com</a></span>
-        <span>🔗 <a href="https://github.com/Todyents" target="_blank">github.com/Todyents</a></span>
-        <span>🔗 <a href="https://github.com/deytaiwo2" target="_blank">github.com/deytaiwo2</a></span>
-      </div>
-    </header>
-
-    <section id="about">
-      <h2>Professional Summary</h2>
-      <p style="color: var(--text-muted);">
-        Software Engineer with hands-on experience designing, developing, and deploying full-stack web applications and scalable data pipelines[cite: 1]. Proficient in JavaScript (React, Node.js), Python, SQL, and RESTful API integrations[cite: 1]. Adept at managing web applications, optimizing backend database queries, maintaining CI/CD workflows on GitHub, and securing system infrastructure[cite: 1].
-      </p>
-    </section>
-
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Frontend & Web</h3>
-          <p>JavaScript (ES6+), React.js, HTML5, CSS3, WordPress, Shopify</p>
-        </div>
-        <div class="skill-card">
-          <h3>Backend & Databases</h3>
-          <p>Node.js, Express, Python, SQL, MySQL, REST API Integration</p>
-        </div>
-        <div class="skill-card">
-          <h3>Tools & DevOps</h3>
-          <p>Git, GitHub Codespaces, GitHub Pages, npm, Data Analysis (pandas), Security Compliance</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <div class="timeline-item">
-        <div class="timeline-header">
-          <span class="timeline-title">Software Developer</span>
-          <span class="timeline-date">2024 – Present</span>
-        </div>
-        <div class="timeline-company">Todysec Services</div>
-        <ul>
-          <li>Designed and implemented responsive web application components using React and Node.js.</li>
-          <li>Integrated third-party RESTful APIs to automate real-time data retrieval and processing for e-commerce systems.</li>
-          <li>Configured and managed repository deployment workflows, version control, and environments via GitHub Codespaces.</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-header">
-          <span class="timeline-title">Full-Stack & Analytics Developer</span>
-          <span class="timeline-date">2021 – 2024</span>
-        </div>
-        <div class="timeline-company">Volubiks Integrated Services</div>
-        <ul>
-          <li>Built and customized dynamic e-commerce platforms using PHP, WordPress, and database connections.</li>
-          <li>Developed Python data manipulation scripts using pandas for cleaning datasets and evaluating data analytics pipelines.</li>
-          <li>Maintained database integrity, executed SQL queries, and ensured continuous compliance with web security standards.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Live Projects & Repositories</h2>
-      <div class="repo-grid" id="repo-container">
-        <p style="color: var(--text-muted);">Fetching repositories from GitHub...</p>
-      </div>
-    </section>
-
-    <section id="education">
-      <h2>Education & Certifications</h2>
-      <div class="skill-card" style="margin-bottom: 0.8rem;">
-        <h3>Postgraduate Diploma (PGD), Computer and Information Science</h3>
-        <p style="color: var(--text-muted);">Lead City University | 2023</p>
-      </div>
-      <div class="skill-card" style="margin-bottom: 0.8rem;">
-        <h3>National Diploma (ND), Networks and Systems Security</h3>
-        <p style="color: var(--text-muted);">HCT Ibadan | 2022</p>
-      </div>
-      <div class="skill-card">
-        <h3>CompTIA Security+ Certified</h3>
-        <p style="color: var(--text-muted);">2023</p>
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2026 Taiwo Odeyemi. Built for Cloudflare Pages.</p>
-    </footer>
+  <div class="wrap">
+    <nav><a class="mark" href="."><span class="mark-dot"></span> TAIWO ODEYEMI</a><div class="nav-links"><a href="#work">Work</a><a href="#story">About</a><a href="mailto:t6_odeyemi@yahoo.com">Contact</a><button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme">◐</button></div></nav>
+    <main>
+      <header class="hero reveal"><div><div class="kicker mono">Software engineer / Lagos, NG</div><h1>Build it<br /><span>clearly.</span></h1><div class="hero-copy"><p>I make full-stack products and data systems that feel as good to use as they are to maintain.</p><a class="hero-cta" href="#work">See selected work <span aria-hidden="true">↘</span></a></div></div><div class="hero-art" aria-label="Monogram TO"><strong>TO</strong><small class="mono">Est. 2021<br />Still curious</small></div></header>
+      <div class="ticker" aria-hidden="true"><div class="ticker-track mono"><span>JavaScript <b>✳</b></span><span>React <b>✳</b></span><span>Node.js <b>✳</b></span><span>Python <b>✳</b></span><span>SQL <b>✳</b></span><span>Security <b>✳</b></span><span>JavaScript <b>✳</b></span><span>React <b>✳</b></span><span>Node.js <b>✳</b></span></div></div>
+      <section id="story" class="reveal"><div class="section-head"><h2>A little<br />context.</h2><p>Technical depth, human-scale thinking, and a preference for work that earns its place.</p></div><div class="intro-grid"><p>My sweet spot is the space between a sharp interface and the dependable systems underneath it.</p><div class="facts"><div class="fact"><strong>05+</strong><span>Years building for the web</span></div><div class="fact"><strong>03</strong><span>Languages I reach for daily</span></div><div class="fact"><strong>02</strong><span>GitHub identities, one point of view</span></div><div class="fact"><strong>infinity</strong><span>Questions worth asking</span></div></div></div></section>
+      <section id="work" class="reveal"><div class="section-head"><h2>Selected<br />work.</h2><p>Open-source experiments and production-minded projects, fetched live from GitHub.</p></div><div class="filter-row"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="JavaScript">JavaScript</button><button class="filter" data-filter="Python">Python</button></div><div class="repo-grid" id="repo-container"><p class="loading mono">Loading the latest work...</p></div></section>
+      <section id="experience" class="reveal"><div class="section-head"><h2>Where I've<br />been.</h2><p>A short timeline of the rooms where I learned to ship.</p></div><div class="experience-grid"><div><h3>Software Developer</h3><div class="date mono">2024 - Present / Todysec Services</div><h3>Full-Stack &amp; Analytics Developer</h3><div class="date mono">2021 - 2024 / Volubiks Integrated Services</div></div><ul><li>Designed responsive web application components with React and Node.js.</li><li>Integrated RESTful APIs to automate real-time data retrieval for e-commerce systems.</li><li>Built dynamic e-commerce platforms with PHP, WordPress, and database connections.</li><li>Developed pandas workflows for cleaning datasets and evaluating analytics pipelines.</li></ul></div></section>
+    </main>
+    <footer><span class="mono">Taiwo Odeyemi / 2026</span><span><a href="mailto:t6_odeyemi@yahoo.com">Let's make something useful.</a> <span aria-hidden="true">↗</span></span></footer>
   </div>
-
   <script>
-    const githubUsernames = ['Todyents', 'deytaiwo2'];
-
-    async function fetchGitHubRepos() {
-      const repoContainer = document.getElementById('repo-container');
-      repoContainer.innerHTML = ''; 
-
-      try {
-        const fetchPromises = githubUsernames.map(username =>
-          fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=4`)
-            .then(res => res.ok ? res.json() : [])
-        );
-
-        const results = await Promise.all(fetchPromises);
-        const allRepos = results.flat();
-
-        if (allRepos.length === 0) {
-          repoContainer.innerHTML = '<p style="color: var(--text-muted);">No public repositories found.</p>';
-          return;
-        }
-
-        allRepos.slice(0, 6).forEach(repo => {
-          const card = document.createElement('div');
-          card.className = 'repo-card';
-          card.innerHTML = `
-            <div>
-              <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-              <p>${repo.description || 'No description provided.'}</p>
-            </div>
-            <div class="repo-meta">
-              <span>⚡ ${repo.language || 'Code'}</span>
-              <span>⭐ ${repo.stargazers_count}</span>
-            </div>
-          `;
-          repoContainer.appendChild(card);
-        });
-      } catch (err) {
-        repoContainer.innerHTML = '<p style="color: var(--text-muted);">Unable to load repositories right now.</p>';
-      }
+    const usernames = ['Todyents', 'deytaiwo2'];
+    const repoContainer = document.getElementById('repo-container');
+    let repositories = [];
+    function renderRepos(filter = 'all') {
+      const visible = filter === 'all' ? repositories : repositories.filter(repo => repo.language === filter);
+      repoContainer.innerHTML = visible.length ? visible.slice(0, 6).map((repo, index) => `<article class="repo-card"><div><span class="repo-number mono">0${index + 1} / ${repo.language || 'Code'}</span><h3>${repo.name}</h3><p>${repo.description || 'A small piece of useful software.'}</p></div><div class="repo-meta"><span>★ ${repo.stargazers_count}</span><a href="${repo.html_url}" target="_blank" rel="noopener">View repo ↗</a></div></article>`).join('') : '<p class="loading mono">No projects in this category yet.</p>';
     }
-
-    fetchGitHubRepos();
+    async function fetchRepos() {
+      try { const responses = await Promise.all(usernames.map(name => fetch(`https://api.github.com/users/${name}/repos?sort=updated&per_page=6`).then(response => response.ok ? response.json() : []))); repositories = responses.flat().filter((repo, index, all) => index === all.findIndex(item => item.id === repo.id)).sort((a, b) => b.stargazers_count - a.stargazers_count); renderRepos(); } catch (error) { repoContainer.innerHTML = '<p class="loading mono">The repositories are taking a breather. Check GitHub directly.</p>'; }
+    }
+    document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => { document.querySelector('.filter.active').classList.remove('active'); button.classList.add('active'); renderRepos(button.dataset.filter); }));
+    document.getElementById('theme-toggle').addEventListener('click', () => document.body.classList.toggle('night'));
+    fetchRepos();
   </script>
 </body>
 </html>
